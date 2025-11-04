@@ -1,0 +1,10 @@
+artifact_location: file:///home/onyxia/work/ML-FINANCE-ENSAE/ML%20FINANCE%20ENSAE/mlruns/0/models/m-0fe1321eac5049b8bf22cef670bfe868/artifacts
+creation_timestamp: 1762265015283
+experiment_id: '0'
+last_updated_timestamp: 1762265024721
+model_id: m-0fe1321eac5049b8bf22cef670bfe868
+model_type: null
+name: model
+source_run_id: e614fc8ca8cb429d8a153c47d7043ef0
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/onyxia/work/ML-FINANCE-ENSAE/ML%20FINANCE%20ENSAE/mlruns/0/071a8b7ad6d8449689e56329c2831500/artifacts
+end_time: 1762264934625
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 071a8b7ad6d8449689e56329c2831500
+run_name: LogisticRegression_FedFunds
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762264931479
+status: 4
+tags: []
+user_id: onyxia

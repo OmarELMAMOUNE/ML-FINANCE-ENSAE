@@ -1,0 +1,22 @@
+artifact_path: file:///home/onyxia/work/ML-FINANCE-ENSAE/ML%20FINANCE%20ENSAE/mlruns/0/models/m-8266d675b14e45349ac79df401f74f05/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.5.1
+model_id: m-8266d675b14e45349ac79df401f74f05
+model_size_bytes: 798
+model_uuid: m-8266d675b14e45349ac79df401f74f05
+prompts: null
+run_id: 0d16820a22ce42aab60d9009ad343c6d
+utc_time_created: '2025-11-04 13:08:10.566973'
