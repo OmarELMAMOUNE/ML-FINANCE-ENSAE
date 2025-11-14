@@ -24,6 +24,16 @@ L’objectif n’est pas de proposer un modèle de trading complet, mais de mont
 
 On propose deux notebooks: `preliminary_model` (la modélisation introductive) et `main_model` (qui permet de maximiser les métriques)
 
+
+
+```bash
+git clone
+
+```
+
+
+
+
 Les données utilisées:
 
 - https://fred.stlouisfed.org/series/FEDFUNDS
