@@ -26,10 +26,16 @@ On propose deux notebooks: `preliminary_model` (la modélisation introductive) e
 
 Les données utilisées:
 
-https://fred.stlouisfed.org/series/FEDFUNDS
-https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund.settlements.html
-https://fred.stlouisfed.org/series/PCEPI
-https://fred.stlouisfed.org/series/PAYEMS
-https://fred.stlouisfed.org/series/GDP
-https://fred.stlouisfed.org/series/INDPRO
-https://fred.stlouisfed.org/series/CPIAUCSL
+- https://fred.stlouisfed.org/series/FEDFUNDS
+  
+- https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund.settlements.html
+
+- https://fred.stlouisfed.org/series/PCEPI
+
+- https://fred.stlouisfed.org/series/PAYEMS
+
+- https://fred.stlouisfed.org/series/GDP
+
+- https://fred.stlouisfed.org/series/INDPRO
+
+- https://fred.stlouisfed.org/series/CPIAUCSL
