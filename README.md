@@ -1,7 +1,7 @@
 
 # Analyse de la relation entre Federal Funds Futures et taux effectif
 
-L’objectif est d’étudier le lien entre les Federal Funds Futures et le taux effectif des Fed Funds (EFFR / FEDFUNDS), et d’évaluer dans quelle mesure l’information contenue dans les futures permet d’anticiper les hausses de taux de la Fed.
+L’objectif est d’étudier le lien entre les Federal Funds Futures et le taux effectif des Fed Funds (EFFR / FEDFUNDS), et d’évaluer dans quelle mesure l’information contenue dans les futures permet d’anticiper les hausses de taux de la Fed, ainsi que dans les données macro-économiques.
 
 Dans une première partie, nous :
 
@@ -24,6 +24,8 @@ L’objectif n’est pas de proposer un modèle de trading complet, mais de mont
 
 On propose deux notebooks: `preliminary_model` (la modélisation introductive) et `main_model` (qui permet de maximiser les métriques)
 
+
+En conclusion, on arrive à construire un modèle avec 80-90% de accuracy (en fonction de méthode établie), avec de bons résultats, mais moins stables pour la période de covid19 (2019-2021)
 
 Afin d'accéder aux travaux: 
 
