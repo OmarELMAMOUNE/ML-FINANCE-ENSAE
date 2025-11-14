@@ -1,48 +1,17 @@
-# Fed Rate Prediction Model 
 
-## Project Overview
+Analyse de la relation entre Federal Funds Futures et taux effectif
 
-This project develops a predictive model for Federal Reserve interest rate movements (up or down) by analyzing the relationship between economic indicators, Federal Funds Futures (FFF) implicit rates, and historical Fed decisions.
+L’objectif est d’étudié le lien entre les Federal Funds Futures et le taux effectif des Fed Funds (EFFR / FEDFUNDS), et d’évaluer dans quelle mesure l’information contenue dans les futures permet d’anticiper les hausses de taux de la Fed.
 
-## Background on Federal Funds Rate
+Dans une première partie, nous :
+• chargeons et mettons en forme les séries historiques (EFFR et Federal Funds Futures) ;
+• construisons le taux implicite à partir des contrats futures ;
+• fusionnons les séries pour obtenir, à chaque date, le couple (taux implicite, taux effectif) ;
+• analysons graphiquement la dynamique des deux séries et la différence (spread) entre taux implicite et taux effectif.
 
-### How the Fed Sets Rates
+Dans une seconde partie, nous construisons une variable cible binaire indiquant si le taux FEDFUNDS augmente au pas de temps suivant, et nous utilisons ce spread (ainsi que ses retards et éventuellement d’autres variables, comme la volatilité) comme features dans un modèle de régression logistique.
+Nous comparons ensuite deux approches d’évaluation :
+• un schéma walk-forward avec ré-estimation récursive (évaluation hors-échantillon, plus réaliste) ;
+• un entraînement global sur toute l’histoire disponible (évaluation in-sample, plus optimiste).
 
-The Federal Open Market Committee (FOMC) sets the target federal funds rate based on:
-
-- Economic growth indicators
-- Inflation metrics
-- Employment data
-- Financial market conditions
-- Global economic factors
-
-The FOMC meets approximately eight times per year to review economic conditions and adjust monetary policy accordingly. The federal funds rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight.
-
-### EFFR (Effective Federal Funds Rate)
-
-The **Effective Federal Funds Rate (EFFR)** is the volume-weighted median of overnight federal funds transactions reported by brokers and dealers. Key points:
-
-- Published daily by the Federal Reserve Bank of New York
-- Represents the actual rate at which banks are lending to each other
-- Typically trades within the target range set by the FOMC
-- Serves as a benchmark for many short-term interest rates
-
-### Federal Funds Futures (FFF)
-
-**Federal Funds Futures (FFF)** are financial contracts traded on the Chicago Mercantile Exchange (CME) that:
-
-- Allow market participants to hedge or speculate on future FOMC rate decisions
-- Are cash-settled to the average daily EFFR for the delivery month
-- Have prices that reflect market expectations of future Fed policy
-- Trade with monthly expirations extending
-
-
-Data taken manually and merged from :
-
-https://fred.stlouisfed.org/series/FEDFUNDS
-https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund.settlements.html
-https://fred.stlouisfed.org/series/PCEPI
-https://fred.stlouisfed.org/series/PAYEMS
-https://fred.stlouisfed.org/series/GDP
-https://fred.stlouisfed.org/series/INDPRO
-https://fred.stlouisfed.org/series/CPIAUCSL
+L’objectif n’est pas de proposer un modèle de trading complet, mais de montrer, de manière pédagogique, comment exploiter les Federal Funds Futures pour estimer la probabilité d’une hausse de taux et comparer différents cadres d’évaluation prédictive.
