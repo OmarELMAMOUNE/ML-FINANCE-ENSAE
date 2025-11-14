@@ -25,11 +25,21 @@ L’objectif n’est pas de proposer un modèle de trading complet, mais de mont
 On propose deux notebooks: `preliminary_model` (la modélisation introductive) et `main_model` (qui permet de maximiser les métriques)
 
 
+Afin d'accéder aux travaux: 
 
 ```bash
-git clone
+git clone https://github.com/OmarELMAMOUNE/ML-FINANCE-ENSAE.git
 
 ```
+
+Afin d'installer les packages:
+
+```bash
+cd ML-FINANCE-ENSAE
+pip install -r requirements.txt
+
+```
+
 
 
 
