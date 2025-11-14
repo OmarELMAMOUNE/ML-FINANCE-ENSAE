@@ -1,4 +1,3 @@
 .env
 optruns/*
-!optruns/.gitkeep
 mlruns
